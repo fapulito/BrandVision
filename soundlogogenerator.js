@@ -8,7 +8,7 @@ const textToSpeech = require('@google-cloud/text-to-speech').TextToSpeechClient;
 const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } = require("@google/generative-ai");
 const upload = multer({ dest: 'uploads/' });
 const app = express();
-const port = 3001;
+const port = 8080;
 
 const MODEL_NAME = "gemini-pro-vision";
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GEN_AI_API_KEY);
